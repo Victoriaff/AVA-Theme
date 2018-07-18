@@ -2,7 +2,7 @@
 	Theme Name: WP Magic Theme
 	Theme URI: https://wp-magic.com/
 	Author: WP-Mmagic
-	Text Domain: wpm-theme
+	Text Domain: ava-theme
 	Domain Path: /languages
 	Version: 1.0.0
 */
@@ -373,7 +373,7 @@ html, body {
   border:2px yellow dotted;
 }
 
-.wpm-wrp {
+.ava-wrp {
   min-height:100%;
   height:100%;
 
@@ -381,7 +381,7 @@ html, body {
   flex-direction: column;
 }
 
-.wpm-header-wrp {
+.ava-header-wrp {
   background-color:#ec8a7e;
 
   &.fixed {
@@ -405,11 +405,11 @@ html, body {
 
 }
 
-.wpm-sidebar-wrp {
+.ava-sidebar-wrp {
   background-color:#ffc91b;
 }
 
-.wpm-content-wrp {
+.ava-content-wrp {
   &.fixed {
     margin-top:50px;
   }
@@ -428,12 +428,12 @@ html, body {
       border:3px red solid;
       flex:1;
 
-      .wpm-sidebar {
+      .ava-sidebar {
 
         background-color: #9dcd78;
         padding: 15px;
       }
-      .wpm-content {
+      .ava-content {
         background-color: #cfd9ea;
         padding: 15px;
       }
@@ -442,7 +442,7 @@ html, body {
 
 }
 
-.wpm-footer-wrp {
+.ava-footer-wrp {
   background-color:#b98cf0;
 
   .container {
@@ -467,9 +467,9 @@ html, body {
 }
 
 @media (min-width: 768px) {
-  .wpm-header-wrp,
-  .wpm-content-wrp,
-  .wpm-footer-wrp {
+  .ava-header-wrp,
+  .ava-content-wrp,
+  .ava-footer-wrp {
     padding-left:20px;
     padding-right:20px;
   }
@@ -480,15 +480,15 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .wpm-content-wrp {
+  .ava-content-wrp {
 
     .container {
 
       .row {
-        .wpm-sidebar {
+        .ava-sidebar {
           order: 2;
         }
-        .wpm-content {
+        .ava-content {
           order: 1;
         }
 

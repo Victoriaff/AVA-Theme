@@ -8,9 +8,9 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div class="wpm-wrp">
+<div class="ava-wrp">
 
-	<div class="wpm-header-wrp">
+	<div class="ava-header-wrp">
 		<div class="container">
 			<header>
 				Just header
@@ -18,19 +18,19 @@
 		</div>
 	</div>
 
-	<div class="wpm-content-wrp">
+	<div class="ava-content-wrp">
 
 		<div class="container">
 
 			<div class="row">
 
-				<div class="wpm-sidebar col-md-3 col-lg-2">
+				<div class="ava-sidebar col-md-3 col-lg-2">
 					Sidebar<br/><br/>Sidebar<br/><br/>Sidebar<br/><br/>Sidebar<br/><br/>Sidebar<br/><br/>Sidebar<br/>
 
 
 				</div>
 
-				<div class="wpm-content col-md-9 col-lg-10">
+				<div class="ava-content col-md-9 col-lg-10">
 
 
 

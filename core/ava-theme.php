@@ -1,7 +1,7 @@
 <?php
 
-if ( ! class_exists( 'WPMagic_Theme' ) ) {
-	class WPMagic_Theme {
+if ( ! class_exists( 'AVA_Theme' ) ) {
+	class AVA_Theme {
 		
 		private static $instance;
 		
@@ -70,19 +70,19 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			$this->load_core();
 			
 			// Load controllers
-			require_once WPM_THEME_CORE_DIR . '/controller/controller.php';
+			require_once AVA_THEME_CORE_DIR . '/controller/controller.php';
 			
 			// Controllers for back-end part only
 			if ( is_admin() ) {
-				require_once WPM_THEME_CORE_DIR . '/controller/admin.php';
-				$this->admin = new WPMagic_Theme_Admin();
+				require_once AVA_THEME_CORE_DIR . '/controller/admin.php';
+				$this->admin = new AVA_Theme_Admin();
 				$this->admin->init();
 			}
 			
 			// Controllers for front-end part only
 			if ( ! is_admin() || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
-				require_once WPM_THEME_CORE_DIR . '/controller/front.php';
-				$this->front = new WPMagic_Theme_Front();
+				require_once AVA_THEME_CORE_DIR . '/controller/front.php';
+				$this->front = new AVA_Theme_Front();
 				$this->front->init();
 			}
 		}
@@ -92,7 +92,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 		 *
 		 * @return self
 		 */
-		public static function get_instance() {
+		public static function instance() {
 			if ( ! ( self::$instance instanceof self ) ) {
 				self::$instance = new self();
 			}
@@ -106,7 +106,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 		 * @return self
 		 */
 		public function load_config() {
-			$cfile = WPM_THEME_DIR . '/core/config.php';
+			$cfile = AVA_THEME_DIR . '/core/config.php';
 			if ( file_exists( $cfile ) ) {
 				$this->config = require $cfile;
 			}
@@ -132,19 +132,19 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 		public function load_core() {
 			
 			// Load helpers
-			foreach ( glob( WPM_THEME_CORE_DIR . '/helpers/*.php' ) as $file ) {
+			foreach (glob( AVA_THEME_CORE_DIR . '/helpers/*.php' ) as $file ) {
 				require_once $file;
 			}
 			
 			// Load classes
-			foreach ( glob( WPM_THEME_CORE_DIR . '/classes/*.php' ) as $file ) {
+			foreach (glob( AVA_THEME_CORE_DIR . '/classes/*.php' ) as $file ) {
 				require_once $file;
 			}
 			
 			// Load only for admin part
 			if ( is_admin() ) {
 				// Redux
-				require_once WPM_THEME_VENDOR_DIR . '/redux-framework/ReduxCore/framework.php';
+				require_once AVA_THEME_VENDOR_DIR . '/redux-framework/ReduxCore/framework.php';
 			}
 		}
 		
@@ -153,7 +153,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 		 */
 		public function options( $key = null ) {
 			if ( empty( $this->options ) ) {
-				$this->options = get_option( 'wpm_theme_options' );
+				$this->options = get_option( 'ava_theme_options' );
 			}
 			if ( empty( $this->options ) ) {
 				return;
@@ -177,7 +177,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
              * If you're building a theme based on Twenty Seventeen, use a find and replace
              * to change 'twentyseventeen' to the name of your theme in all the template files.
              */
-			load_theme_textdomain( 'wpm-theme' );
+			load_theme_textdomain( 'ava-theme' );
 			
 			/**
 			 * Add default posts and comments RSS feed links to head
@@ -217,7 +217,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			 * This theme uses wp_nav_menu() in two locations.
 			 */
 			register_nav_menus( array(
-				'primary' => __( 'Primary Menu', 'wpm-theme' )
+				'primary' => __( 'Primary Menu', 'ava-theme' )
 			) );
 			
 			/*
@@ -330,7 +330,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 				'nav_menus' => array(
 					// Assign a menu to the "top" location.
 					'primary' => array(
-						'name' => __( 'Primary Menu', 'wpm-theme' ),
+						'name' => __( 'Primary Menu', 'ava-theme' ),
 						'items' => array(
 							'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
 							'page_about',
@@ -346,11 +346,11 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			/**
 			 * Filter array of starter content.
 			 *
-			 * @since WPMagic Theme 1.0
+			 * @since AVA Theme 1.0
 			 *
 			 * @param array $starter_content Array of starter content.
 			 */
-			$starter_content = apply_filters( 'wpm_theme_starter_content', $starter_content );
+			$starter_content = apply_filters( 'ava_theme_starter_content', $starter_content );
 			
 			add_theme_support( 'starter-content', $starter_content );
 		}
@@ -392,9 +392,9 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 		 */
 		function widgets_init() {
 			register_sidebar( array(
-				'name'          => __( 'Right Sidebar', 'wpm-theme' ),
+				'name'          => __( 'Right Sidebar', 'ava-theme' ),
 				'id'            => 'sidebar-1',
-				'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'wpm-theme' ),
+				'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'ava-theme' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -402,9 +402,9 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			) );
 			
 			register_sidebar( array(
-				'name'          => __( 'Left Sidebar', 'wpm-theme' ),
+				'name'          => __( 'Left Sidebar', 'ava-theme' ),
 				'id'            => 'sidebar-2',
-				'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'wpm-theme' ),
+				'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'ava-theme' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -412,9 +412,9 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			) );
 			
 			register_sidebar( array(
-				'name'          => __( 'Footer', 'wpm-theme' ),
+				'name'          => __( 'Footer', 'ava-theme' ),
 				'id'            => 'sidebar-3',
-				'description'   => __( 'Add widgets here to appear in your footer.', 'wpm-theme' ),
+				'description'   => __( 'Add widgets here to appear in your footer.', 'ava-theme' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -422,9 +422,9 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			) );
 			
 			register_sidebar( array(
-				'name'          => __( 'Pre Footer', 'wpm-theme' ),
+				'name'          => __( 'Pre Footer', 'ava-theme' ),
 				'id'            => 'sidebar-4',
-				'description'   => __( 'Add widgets here to appear in your footer.', 'wpm-theme' ),
+				'description'   => __( 'Add widgets here to appear in your footer.', 'ava-theme' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -433,7 +433,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			
 			if ( class_exists( 'woocommerce' ) ) {
 				register_sidebar( array(
-					'name'          => __( 'Shop Page Sidebar', 'wpm-theme' ),
+					'name'          => __( 'Shop Page Sidebar', 'ava-theme' ),
 					'id'            => 'sidebar-5',
 					'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</aside>',
@@ -442,7 +442,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 				) );
 				
 				register_sidebar( array(
-					'name'          => __( 'Product Page Sidebar', 'wpm-theme' ),
+					'name'          => __( 'Product Page Sidebar', 'ava-theme' ),
 					'id'            => 'sidebar-6',
 					'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</aside>',
@@ -461,17 +461,17 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			if ( is_admin() ) {
 			} else {
 				// Theme stylesheet.
-				wp_enqueue_style( 'wpm-bootstrap-grid', get_theme_file_uri( '/assets/libs/bootstrap/bootstrap-grid.css' ) );
+				wp_enqueue_style( 'ava-bootstrap-grid', get_theme_file_uri( '/assets/libs/bootstrap/bootstrap-grid.css' ) );
 				
-				wp_enqueue_style( 'wpm-core-style', get_stylesheet_uri() );
-				wp_enqueue_style( 'wpm-theme-style', get_theme_file_uri( '/assets/css/style.css' ) );
+				wp_enqueue_style( 'ava-core-style', get_stylesheet_uri() );
+				wp_enqueue_style( 'ava-theme-style', get_theme_file_uri( '/assets/css/style.css' ) );
 				
 				// Animation
-				wp_enqueue_style( 'wpm-animate', get_theme_file_uri( '/assets/css/animate.css' ) );
+				wp_enqueue_style( 'ava-animate', get_theme_file_uri( '/assets/css/animate.css' ) );
 				
 				// JS
-				wp_enqueue_script( 'wpm-waypoints', get_theme_file_uri( '/assets/libs/waypoints/jquery.waypoints.js' ), array( 'jquery' ) );
-				wp_enqueue_script( 'wpm-main', get_theme_file_uri( '/assets/js/main.js' ), array( 'jquery' ) );
+				wp_enqueue_script( 'ava-waypoints', get_theme_file_uri( '/assets/libs/waypoints/jquery.waypoints.js' ), array( 'jquery' ) );
+				wp_enqueue_script( 'ava-main', get_theme_file_uri( '/assets/js/main.js' ), array( 'jquery' ) );
 				
 				
 				// Load the html5 shiv.
@@ -481,7 +481,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 				
 			}
 			// Add custom fonts, used in the main stylesheet.
-			//wp_enqueue_style( 'wpm-theme-fonts', $this->custom_fonts_url(), array(), null );
+			//wp_enqueue_style( 'ava-theme-fonts', $this->custom_fonts_url(), array(), null );
 			
 			
 			// Load the Internet Explorer 9 specific stylesheet, to fix display issues in the Customizer.
@@ -510,7 +510,7 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 			}
 			*/
 			
-			//wp_enqueue_script( 'wpm-theme-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+			//wp_enqueue_script( 'ava-theme-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 			
 			//wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 			
@@ -543,12 +543,12 @@ if ( ! class_exists( 'WPMagic_Theme' ) ) {
 	}
 }
 
-if ( ! function_exists( 'wpm_theme' ) ) {
-	function wpm_theme() {
-		return WPMagic_Theme::get_instance();
+if ( ! function_exists( 'ava_theme' ) ) {
+	function ava_theme() {
+		return AVA_Theme::instance();
 	}
 }
-wpm_theme()->init();
+ava_theme()->init();
 
 
 

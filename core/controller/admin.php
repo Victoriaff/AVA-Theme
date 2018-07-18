@@ -3,7 +3,7 @@
 /**
  * Admin controller
  **/
-class WPMagic_Theme_Admin extends WPMagic_Theme_Controller {
+class AVA_Theme_Admin extends AVA_Theme_Controller {
 
 	public $theme_options;
 	
@@ -31,7 +31,7 @@ class WPMagic_Theme_Admin extends WPMagic_Theme_Controller {
 	
 	function init() {
 		// Load options
-		$this->theme_options = new WPMagic_Theme_Options();
+		$this->theme_options = new AVA_Theme_Options();
 		
 	}
 

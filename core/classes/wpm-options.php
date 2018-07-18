@@ -1,8 +1,8 @@
 <?php
 
-if ( !class_exists( 'WPMagic_Options' ) ) {
+if ( !class_exists( 'AVA_Options' ) ) {
 
-	abstract class WPMagic_Options {
+	abstract class AVA_Options {
 
 		// Options block settings
 		public $settings;
@@ -32,8 +32,8 @@ if ( !class_exists( 'WPMagic_Options' ) ) {
 			// Set the notices so we don't see the nagware
 			$GLOBALS['redux_notice_check'] = 1;
 			
-			if ( !class_exists( 'ReduxFramework' ) && file_exists( WPM_THEME_VENDOR_DIR . '/redux-framework//ReduxCore/framework.php' ) ) {
-				require_once WPM_THEME_VENDOR_DIR . '/redux-framework/ReduxCore/framework.php';
+			if ( !class_exists( 'ReduxFramework' ) && file_exists( AVA_THEME_VENDOR_DIR . '/redux-framework//ReduxCore/framework.php' ) ) {
+				require_once AVA_THEME_VENDOR_DIR . '/redux-framework/ReduxCore/framework.php';
 			}
 			
 			if ( !class_exists( "ReduxFramework" ) ) {
@@ -68,7 +68,7 @@ if ( !class_exists( 'WPMagic_Options' ) ) {
 
 		public function show() {
 			
-			add_filter( "redux/wpm_theme_options/field/class/edd_license", "overload_edd_license_field_path" );
+			add_filter( "redux/ava_theme_options/field/class/edd_license", "overload_edd_license_field_path" );
 			
 			//dump($this->options);
 			$this->ReduxFramework = new ReduxFramework( $this->sections, $this->settings );
@@ -80,7 +80,7 @@ if ( !class_exists( 'WPMagic_Options' ) ) {
 		}
 
 		public function options_saved( $directory = null ) {
-			Intense()->options = get_option( 'wpm_options' );
+			Intense()->options = get_option( 'ava_options' );
 
 			if (!empty( Intense()->options['intense_cache_clear'] ) ) {
 				Intense()->clear_cache( $directory );
@@ -114,7 +114,7 @@ if ( !class_exists( 'WPMagic_Options' ) ) {
 		}
 
 		public function setSections( $dirname ) {
-			foreach ( glob(WPM_THEME_CORE_DIR . '/options/' . $dirname . '/*.php') as $file ) {
+			foreach (glob(AVA_THEME_CORE_DIR . '/options/' . $dirname . '/*.php') as $file ) {
 				require $file;
 			}
 		}

@@ -8,9 +8,9 @@ $this->sections['modules'] = array(
 		array(
 			'id' => 'modules',
 			'type' => 'checkbox',
-			'title' => __( 'Active Modules', 'wpm-theme' ),
-			"subtitle" => wp_kses( __( "Turn <strong>On</strong> or <strong>Off</strong> individual shortcodes. ", "wpm-theme" ), array( 'a' => array( 'href' => array(), 'target' => array() ), 'br' => array(), 'strong' => array() ) ),
-			'options' => wpm_theme()->config('modules'),
+			'title' => __( 'Active Modules', 'ava-theme' ),
+			"subtitle" => wp_kses( __( "Turn <strong>On</strong> or <strong>Off</strong> individual shortcodes. ", "ava-theme" ), array( 'a' => array( 'href' => array(), 'target' => array() ), 'br' => array(), 'strong' => array() ) ),
+			'options' => ava_theme()->config('modules'),
 			'default' => array(				
 			)
 		),

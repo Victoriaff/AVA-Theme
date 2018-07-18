@@ -3,7 +3,7 @@
 /**
  * Abstract controller
  **/
-abstract class WPMagic_Theme_Controller {
+abstract class AVA_Theme_Controller {
 	
 	public function __construct() {
 	}

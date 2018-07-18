@@ -3,9 +3,9 @@
 /**
  * Utils
  **/
-if ( ! class_exists( 'WPM_Utils' ) ) {
+if ( ! class_exists( 'AVA_Utils' ) ) {
 	
-	class WPM_Utils {
+	class AVA_Utils {
 		
 		/**
 		 * Get basename

@@ -1,14 +1,14 @@
 <?php
 
-if ( !class_exists( 'WPMagic_Theme_Options' ) ) {
+if ( !class_exists( 'AVA_Theme_Options' ) ) {
 
-	class WPMagic_Theme_Options extends WPMagic_Options {
+	class AVA_Theme_Options extends AVA_Options {
 
-		public $option_name = 'wpm_theme_options';
+		public $option_name = 'ava_theme_options';
 
-		public $page_slug = 'wpm-theme-options';
+		public $page_slug = 'ava-theme-options';
 
-		public $multisite_page_slug = 'wpm-theme-multisite-options';
+		public $multisite_page_slug = 'ava-theme-multisite-options';
 
 
 		public function __construct( ) {
@@ -32,16 +32,16 @@ if ( !class_exists( 'WPMagic_Theme_Options' ) ) {
 				'dev_mode_icon_class'   => 'icon-large',
 				'opt_name'              => $this->option_name,
 				'output_tag'            => true,
-				//'display_name'          => "<img src='" .  WPM_THEME_URL . "/assets/logo.png' style='height:50px;' alt='WPMagic Theme'/>",
-				'display_name'        => __('WP Magic Theme', 'wpm-theme'),
-				'display_version'       => 'v' . WPM_THEME_VERSION,
+				//'display_name'          => "<img src='" .  AVA_THEME_URL . "/assets/logo.png' style='height:50px;' alt='AVA Theme'/>",
+				'display_name'        => __('WP Magic Theme', 'ava-theme'),
+				'display_version'       => 'v' . AVA_THEME_VERSION,
 				'google_api_key'        => 'AIzaSyBZYcKMU9hkCC9iBnDj3kdcX6c9E571vWw',
 				'import_icon_class'     => 'icon-large',
 				'default_icon_class'    => 'icon-large',
 				'menu_type'             => 'submenu',
 				'page_parent'           => 'options-general.php',
-				'menu_title'            => __( 'WP Magic Options', 'wpm-theme' ),
-				'page_title'            => __( 'WP Magic Options', 'wpm-theme' ),
+				'menu_title'            => __( 'WP Magic Options', 'ava-theme' ),
+				'page_title'            => __( 'WP Magic Options', 'ava-theme' ),
 				'page_slug'             => $this->page_slug,
 				'default_show'          => false,
 				'default_mark'          => '*',

@@ -3,7 +3,7 @@
 /**
  * Front controller
  **/
-class WPMagic_Theme_Front extends WPMagic_Theme_Controller {
+class AVA_Theme_Front extends AVA_Theme_Controller {
 
 	public $messages;
 	public $errors;
@@ -77,24 +77,24 @@ class WPMagic_Theme_Front extends WPMagic_Theme_Controller {
 	function load_assets() {
 		
 		// CSS styles
-		wp_enqueue_style( 'wpm-theme-bootstrap-grid', WPM_THEME_URL . '/assets/libs/bootstrap/bootstrap-grid'.WPM_THEME_MINIFY.'.css', false, WPM_THEME_CACHE_TIME );
-		wp_enqueue_style( 'wpm-theme-animate', WPM_THEME_URL . '/assets/css/animate'.WPM_THEME_MINIFY.'.css', false, WPM_THEME_CACHE_TIME );
-		wp_enqueue_style( 'wpm-theme-style', WPM_THEME_URL . '/assets/css/style'.WPM_THEME_MINIFY.'.css', false, WPM_THEME_CACHE_TIME );
+		wp_enqueue_style( 'ava-theme-bootstrap-grid', AVA_THEME_URL . '/assets/libs/bootstrap/bootstrap-grid'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
+		wp_enqueue_style( 'ava-theme-animate', AVA_THEME_URL . '/assets/css/animate'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
+		wp_enqueue_style( 'ava-theme-style', AVA_THEME_URL . '/assets/css/style'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
 		
 		// JS scripts
-		wp_register_script( 'wpm-theme-html5', WPM_THEME_URL. '/assets/libs/html5'.WPM_THEME_MINIFY.'.js', array( 'jquery' ), WPM_THEME_CACHE_TIME, true );
-		wp_register_script( 'wpm-theme-waypoints', WPM_THEME_URL. '/assets/libs/waypoints/jquery.waypoints'.WPM_THEME_MINIFY.'.js', array( 'jquery' ), WPM_THEME_CACHE_TIME, true );
-		wp_register_script( 'wpm-theme-main', WPM_THEME_URL . '/assets/js/main'.WPM_THEME_MINIFY.'.js', array( 'jquery' ), WPM_THEME_CACHE_TIME, true );
+		wp_register_script( 'ava-theme-html5', AVA_THEME_URL. '/assets/libs/html5'.AVA_THEME_MINIFY.'.js', array( 'jquery' ), AVA_THEME_CACHE_TIME, true );
+		wp_register_script( 'ava-theme-waypoints', AVA_THEME_URL. '/assets/libs/waypoints/jquery.waypoints'.AVA_THEME_MINIFY.'.js', array( 'jquery' ), AVA_THEME_CACHE_TIME, true );
+		wp_register_script( 'ava-theme-main', AVA_THEME_URL . '/assets/js/main'.AVA_THEME_MINIFY.'.js', array( 'jquery' ), AVA_THEME_CACHE_TIME, true );
 
 		$js_vars = array(
 			'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
-			'assetsPath' => WPM_THEME_URL . '/assets',
+			'assetsPath' => AVA_THEME_URL . '/assets',
 		);
 
-		wp_enqueue_script( 'wpm-theme-html5' );
-		wp_enqueue_script( 'wpm-theme-waypoints' );
-		wp_enqueue_script( 'wpm-theme-main' );
-		wp_localize_script( 'wpm-theme-main', 'wpmTheme', $js_vars );
+		wp_enqueue_script( 'ava-theme-html5' );
+		wp_enqueue_script( 'ava-theme-waypoints' );
+		wp_enqueue_script( 'ava-theme-main' );
+		wp_localize_script( 'ava-theme-main', 'avaTheme', $js_vars );
 
 		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 

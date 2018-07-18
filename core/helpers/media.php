@@ -1,7 +1,7 @@
 <?php
 
-if ( !class_exists('WPM_Media')) {
-	class WPM_Media {
+if ( !class_exists('AVA_Media')) {
+	class AVA_Media {
 		
 		/**
 		 * Get registered image sizes

@@ -2,8 +2,8 @@
 
 return array(
     'modules' => array(
-        //'testimonials' => __('Testimonials', 'wpm-theme'),
-        'team' => __('Team', 'wpm-theme'),
+        //'testimonials' => __('Testimonials', 'ava-theme'),
+        'team' => __('Team', 'ava-theme'),
 	    
     )
 );

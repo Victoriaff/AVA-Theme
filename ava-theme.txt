@@ -1,9 +1,4 @@
 
-- Define image sizes
-- Add menu locations
-- Post thumnail size
-
-
 ### Plugins ###
 Advanced Custom Fields - https://wordpress.org/plugins/advanced-custom-fields/
 Yoast SEO - https://wordpress.org/plugins/wordpress-seo/
@@ -46,7 +41,7 @@ http://themes.bdayh.com
 # General
     - Layout
         - Screen width
-            - Full width 
+            - Full width
             - Fixed width ( set width )
         - Responsive (check)
     - Grid width (Theme supported change grid width for different resolutions(px). If field empty, content width is 100% for this resolution)
@@ -54,11 +49,11 @@ http://themes.bdayh.com
         - 768 (min value 610)
         - 420 (min value 400)
         - 300 (min value 320)
-    
+
     - Comments
         - Display comment on posts page
         - Display comment on page
-        
+
     - Sidebars
         - Your latest posts
         // - Home page
@@ -71,17 +66,17 @@ http://themes.bdayh.com
         - 404
         - Search
             - params: Right (sticky), Left (sticky)
-        
+
     - Show Featured image on single post (Select option below for show featured image on single post page)
         - Show featured image
-    
+
     - Blog date options (Manage blog date options).
         - Show post date
         - Show year in post date
-    
+
     - Reset options (All theme options will be reset to default)
-        - Reset Defauls (button) 
-    
+        - Reset Defauls (button)
+
 # Header
     - Sticky header
         - Enabled
@@ -90,23 +85,23 @@ http://themes.bdayh.com
     - Type of Responsive menu (Set type of responsive menu)
         - Select menu
         - Button menu
-    - Menu icon color (Chose color for collapsing menu ico)    
+    - Menu icon color (Chose color for collapsing menu ico)
     - Background for header (Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)
     - Header background-color
     - Background image size (Choose size for background image - full width or only for content area)
         - Full widht position
         - Centered position
     - Height for header area (Minimum height in pixels)
-    
+
 # Background
     - Background Image(s) (Upload your background image for site background. (Supported files .png, .jpg, .gif))
         - Background repeat
-    - Background Color ( Choose color for body background )    
+    - Background Color ( Choose color for body background )
     - Background color for content ( Choose color for main content area )
-        
+
 # Logo
     - Logo Position (Set Logo Position)
-        - Left, Center, Right, 
+        - Left, Center, Right,
     - Logo size (Specify resolution for your logo image)
         - Width, Height
     - Logo image (Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)
@@ -115,8 +110,8 @@ http://themes.bdayh.com
     - Favicon iPhone (Upload a custom favicon for iPhone (57x57 pixel png).
     - Favicon iPhone Retina (Upload a custom favicon for iPhone retina (114x114 pixel png).
     - Favicon iPad (Upload a custom favicon for iPad (72x72 pixel png).
-    - Favicon iPad Retina (Upload a custom favicon for iPhone retina (144x144 pixel png).    
-    
+    - Favicon iPad Retina (Upload a custom favicon for iPhone retina (144x144 pixel png).
+
 # Colors
     - Main menu color (Choose your colors for main menu in header)
         - Background color
@@ -185,16 +180,16 @@ http://themes.bdayh.com
     - Slider (Select a slider type that will be used by default)
         - FlexSlider
         - Nivo Slider
-        
+
         - FlexSlider Options ++
         - Nivo Slider Options ++
-    
+
     - Slides (Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [fruitful_slider]. Current theme version support only one slider per website.)
         - Link URL
         - Target "_blank"
         - Upload Image
 
-# Social Links        
+# Social Links
     - Socials Links Position (Choose place where social links will be displayed.)
         - In Header
         - In Footer
@@ -220,7 +215,7 @@ http://themes.bdayh.com
         - Tumblr
         - Soundcloud
         - Tripadvisor
-        
+
 # Footer
     - Footer options (Replace default theme copyright information and links)
         - Copyright section
@@ -229,13 +224,3 @@ http://themes.bdayh.com
     - Custom CSS (Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.)
         - Styles editor
 
-        
-        
-
-
-
-
-
-    
-        
- 
