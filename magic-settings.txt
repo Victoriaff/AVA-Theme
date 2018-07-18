@@ -1,0 +1,241 @@
+
+- Define image sizes
+- Add menu locations
+- Post thumnail size
+
+
+### Plugins ###
+Advanced Custom Fields - https://wordpress.org/plugins/advanced-custom-fields/
+Yoast SEO - https://wordpress.org/plugins/wordpress-seo/
+All-in-one migrate
+WP Statistics - https://wordpress.org/plugins/wp-statistics/
+AddToAny Share Buttons - https://wordpress.org/plugins/add-to-any/   
+
+
+### Features ###
+- Testimonials
+- Team
+    - Social links
+    - Position
+    - Name
+    - Content
+- Features
+- Portfolio
+- Counter
+    
+- Contact Form
+- Yoast SEO
+- Statistics
+- Social Buttons
+
+
+### Themes ###
+https://colorlib.com/wp/free-wordpress-themes/
+
+https://wordpress.org/themes/brilliance/
+https://demos.cpothemes.com/brilliance/
+
+https://demos.cpothemes.com/transcend/portfolio/
+https://themeisle.com/demo/?theme=Zerif+Lite&ref=5257#admindemo
+http://demo.webulous.in/flaton/
+https://demos.cpothemes.com/allegiant/
+
+http://themes.bdayh.com
+
+### Settings ###
+# General
+    - Layout
+        - Screen width
+            - Full width 
+            - Fixed width ( set width )
+        - Responsive (check)
+    - Grid width (Theme supported change grid width for different resolutions(px). If field empty, content width is 100% for this resolution)
+        - 960 (min value 768)
+        - 768 (min value 610)
+        - 420 (min value 400)
+        - 300 (min value 320)
+    
+    - Comments
+        - Display comment on posts page
+        - Display comment on page
+        
+    - Sidebars
+        - Your latest posts
+        // - Home page
+        - Page
+        - Single Post
+        - Archive
+        - Author
+        - Category
+        - Tags
+        - 404
+        - Search
+            - params: Right (sticky), Left (sticky)
+        
+    - Show Featured image on single post (Select option below for show featured image on single post page)
+        - Show featured image
+    
+    - Blog date options (Manage blog date options).
+        - Show post date
+        - Show year in post date
+    
+    - Reset options (All theme options will be reset to default)
+        - Reset Defauls (button) 
+    
+# Header
+    - Sticky header
+        - Enabled
+    - Menu Position (Set menu position)
+        - Right, Left, Center
+    - Type of Responsive menu (Set type of responsive menu)
+        - Select menu
+        - Button menu
+    - Menu icon color (Chose color for collapsing menu ico)    
+    - Background for header (Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)
+    - Header background-color
+    - Background image size (Choose size for background image - full width or only for content area)
+        - Full widht position
+        - Centered position
+    - Height for header area (Minimum height in pixels)
+    
+# Background
+    - Background Image(s) (Upload your background image for site background. (Supported files .png, .jpg, .gif))
+        - Background repeat
+    - Background Color ( Choose color for body background )    
+    - Background color for content ( Choose color for main content area )
+        
+# Logo
+    - Logo Position (Set Logo Position)
+        - Left, Center, Right, 
+    - Logo size (Specify resolution for your logo image)
+        - Width, Height
+    - Logo image (Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)
+    - Logo image retina (Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)
+    - Favicon (A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.)
+    - Favicon iPhone (Upload a custom favicon for iPhone (57x57 pixel png).
+    - Favicon iPhone Retina (Upload a custom favicon for iPhone retina (114x114 pixel png).
+    - Favicon iPad (Upload a custom favicon for iPad (72x72 pixel png).
+    - Favicon iPad Retina (Upload a custom favicon for iPhone retina (144x144 pixel png).    
+    
+# Colors
+    - Main menu color (Choose your colors for main menu in header)
+        - Background color
+        - Menu button color
+        - Font color
+        - Font color (active and hover)
+
+    - Dropdown menu color (Choose your colors for dropdown menu in header)
+        - Background color
+        - Menu button color
+        - Font color
+        - Font color (active and hover)
+
+    - General font color (Choose your colors for text and links)
+        - Font color
+        - Link color
+        - Background link color
+        - Background link color (hover)
+        - Link color (hover)
+        - Link color (focus)
+        - Link color (active)
+    - Color for lines (Choose your colors for lines and separators)
+        - Widget separator color
+        - Blog post date color
+        - Date font color
+
+    - Color for buttons (Choose your colors for buttons)
+        - Button background color
+        - Button background color (hover, active, focus, current page - pagenavi)
+
+    - Color for social icons (Choose your colors for social icons)
+        - Social icons background color
+        - Button background color (hover, active, focus, current page - pagenavi)
+
+    - WooCommerce colors (Choose your colors for WooCommerce)
+        - Sale price color
+        - Rating color (regular)
+        - Rating color (hover, active)
+
+    - Footer colors
+        - Footer top area background color
+        - Footer bottom area background color
+        - Footer text color
+
+# Fonts
+    - Headers (Choose font-family for all headlines.)
+        - Sample Font
+        - Open Sans, sans-serif (select)
+    - Menu (Choose font-family for primary menu.)
+        - Sample Font
+        - Open Sans, sans-serif (select)
+    - Body (Choose font-family for content.)
+        - Sample Font
+        - Open Sans, sans-serif (select)
+    - Font size (Choose font size for specific html elements. Set size as number, without px.)
+        - H1
+        - H2
+        - H3
+        - H4
+        - H5
+        - H6
+        - Menu
+        - P
+
+# Slider
+    - Slider (Select a slider type that will be used by default)
+        - FlexSlider
+        - Nivo Slider
+        
+        - FlexSlider Options ++
+        - Nivo Slider Options ++
+    
+    - Slides (Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [fruitful_slider]. Current theme version support only one slider per website.)
+        - Link URL
+        - Target "_blank"
+        - Upload Image
+
+# Social Links        
+    - Socials Links Position (Choose place where social links will be displayed.)
+        - In Header
+        - In Footer
+
+    - Socials Links (Add link to your social media profiles. Icons with link will be display in header or footer.)
+        - Facebook
+        - Twitter
+        - LinkedIn
+        - MySpace
+        - Google Plus+
+        - Dribbble
+        - Skype
+        - Flickr
+        - You Tube
+        - Vimeo
+        - RSS
+        - Vk.com
+        - Instagram
+        - Pinterest
+        - Yelp
+        - E-mail
+        - Github
+        - Tumblr
+        - Soundcloud
+        - Tripadvisor
+        
+# Footer
+    - Footer options (Replace default theme copyright information and links)
+        - Copyright section
+
+# Custim CSS
+    - Custom CSS (Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.)
+        - Styles editor
+
+        
+        
+
+
+
+
+
+    
+        
+ 

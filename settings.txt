@@ -1,0 +1,197 @@
+### General
+    ## Site background
+    	- Background image(s)
+			- Background position:
+				left top
+				left center
+				left bottom
+				right top
+				right center
+				right bottom
+				center top
+				center center
+				center bottom
+			- Background Size
+				auto
+				contain
+				cover
+			- Background Repeat
+				repeat
+				repeat-x
+				repeat-y
+				no-repeat
+				space
+				round
+			- Background Attachment
+				scroll
+				fixed
+				local
+    ## Site background color
+
+    # Reset options (All theme options will be reset to default)
+         - Reset Defauls (button)
+
+
+### Content
+	## Content layout
+		- Width (radio)
+			- Responsive
+            - Fixed width, (px) ( input )
+
+        - Grid (only if responsive) (Theme supported change grid width for different resolutions(px). If field empty, content width is 100% for this resolution)
+        	min value 768
+        	min value 610
+        	min value 400
+        	min value 320
+
+        - Margin
+        	Top, (px,%) (input)
+        	Right, (px,%) (input)
+        	Bottom, (px,%) (input)
+        	Left, (px,%) (input)
+
+        - Background image(s)
+        - Background color
+
+	## Text & Links styles
+		# Font
+			- Font size, (px,%)
+			- Font family (select)
+				- Inherit
+				- Fonts...
+		# Text
+			- Font color (color picker)
+		# Links
+			- Link (text style)
+			 	- Color (color picker)
+			 	- Background color (color picker)
+			 	- Text decoration (select)
+			 		- None
+			 		- Underline
+			- Link (hover) (text style)
+			- Link (focus) (text style)
+			- Link (active) (text style)
+
+	## Sidebars
+        - Your latest posts
+        	Right (checkbox) Sticky (checkbox)
+        	Left (checkbox) Sticky (checkbox)
+        // - Home page
+        - Page
+        - Single Post
+        - Archive
+        - Author
+        - Category
+        - Tags
+        - 404
+        - Search
+
+    ## Posts
+	    - Show Featured image on single post (checkbox)
+		- Show post date (checkbox)
+		- Show year in post date (checkbox)
+
+		- Post Date style (text syle)
+
+
+### Header
+    ## Type
+        - Default
+        - Sticky
+        - Liquid
+        - Scroll
+    # Header height, px (input)
+    # Background image (background option except Background Attachment )
+    # Background color (color picker)
+    # Opacity, % (input)
+
+### Logo
+	- Position (Set Logo Position) (select)
+		- Left, Center, Right,
+	- Size (Specify resolution for your logo image)
+		- Width, px (input)
+		- Height, px (input)
+	- Image (Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif) (upload imgae)
+		- Generate favicons (checkbox)
+	- Image retina (Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px) (upload imgae)
+		- Generate favicons (checkbox)
+
+	## Favicons
+	- Favicon (A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.) (upload imgae)
+	- Favicon iPhone (Upload a custom favicon for iPhone (57x57 pixel png). (upload imgae)
+	- Favicon iPhone Retina (Upload a custom favicon for iPhone retina (114x114 pixel png). (upload imgae)
+	- Favicon iPad (Upload a custom favicon for iPad (72x72 pixel png). (upload imgae)
+	- Favicon iPad Retina (Upload a custom favicon for iPhone retina (144x144 pixel png). (upload imgae)
+
+### Navigation
+    ## Main menu
+        - Menu Position (select)
+            Right
+            Left
+            Center
+		- Main Items
+			- Font color (color picker)
+            - Font color (active and hover) (color picker)
+            - Font size, (px,%)
+            - Font family (select)
+            	- Inherit
+            	- Fonts...
+			- Background color (color picker)
+            - Background color (active and hover) (color picker)
+		- Sub Items
+			- Font color (color picker)
+			- Font color (active and hover) (color picker)
+			- Font size, (px,%)
+			- Font family (select)
+				- Inherit
+				- Fonts...
+			- Background color (color picker)
+			- Background color (active and hover) (color picker)
+
+		- Menu background color (color picker)
+
+    ## Responsive menu
+        - Type (select)
+            - Dropdown select
+            - List
+
+        - Display animation
+            None
+            Left to Right
+            Right to Left
+            Top to Bottom
+
+        - Menu Button
+            - Animation (select)
+                None
+                Cross
+            - Color (color picker)
+
+
+    ## Back to Top
+        - YesNo
+
+        Choice:
+        # Image
+        # Text
+
+
+        - Size
+            Width, px (input)
+        - Position (select)
+            Rigth Bottom
+            Left Bottom
+        - Margin
+            Margin X, px (input)
+            Margin Y, px (input)
+        - Fixed (checkbox)
+
+### Comments
+    # Display comment on posts page (checkbox)
+    # Display comment on page (checkbox)
+
+
+### Shortcodes
+	# Shortcode (select)
+
+background-origin: border-box;

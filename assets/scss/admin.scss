@@ -1,0 +1,30 @@
+
+// Redux
+.redux-notice, .rAds, .rAds span, #redux_rAds,
+.redux-dev-mode-notice-container{ display: none; }
+
+// Multi-text
+ul.redux-multi-text {
+  li {
+    float:left;
+    display:inline-block;
+  }
+  input.regular-text {
+    width:70px;
+
+  }
+}
+
+.redux-multi-text-remove {
+  &.deletion {
+    font-size:11px !important;
+    color:gray !important;
+
+    &:hover {
+      background-color:gray !important;
+      color:#FFF !important;
+    }
+  }
+}
+
+
