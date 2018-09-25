@@ -1,0 +1,93 @@
+/*
+Theme Name: AVA Theme
+Theme URI: https://ava-team.com/
+Author: AVA Team
+Text Domain: ava-theme
+Domain Path: /languages
+Version: 1.0.0
+*/
+
+/*=====================================
+=     Test                            =
+======================================*/
+
+@mixin my-clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}
+
+.page-title {
+  @include my-clearfix;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+/*==================================*/
+
+/*
+// Bootstrap styles
+@import '../libs/bootstrap/scss/bootstrap';
+*/
+// Custom variables
+@import 'partials/variables';
+
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/variables";
+@import "../libs/bootstrap/scss/mixins";
+@import "../libs/bootstrap/scss/utilities";
+
+
+@import "../libs/bootstrap/scss/root";
+@import "../libs/bootstrap/scss/reboot";
+@import "../libs/bootstrap/scss/type";
+@import "../libs/bootstrap/scss/images";
+@import "../libs/bootstrap/scss/code";
+
+@import "../libs/bootstrap/scss/grid";
+
+@import "../libs/bootstrap/scss/tables";
+@import "../libs/bootstrap/scss/forms";
+@import "../libs/bootstrap/scss/buttons";
+@import "../libs/bootstrap/scss/transitions";
+@import "../libs/bootstrap/scss/dropdown";
+@import "../libs/bootstrap/scss/button-group";
+@import "../libs/bootstrap/scss/input-group";
+@import "../libs/bootstrap/scss/custom-forms";
+@import "../libs/bootstrap/scss/nav";
+@import "../libs/bootstrap/scss/navbar";
+@import "../libs/bootstrap/scss/card";
+@import "../libs/bootstrap/scss/breadcrumb";
+@import "../libs/bootstrap/scss/pagination";
+@import "../libs/bootstrap/scss/badge";
+@import "../libs/bootstrap/scss/jumbotron";
+@import "../libs/bootstrap/scss/alert";
+@import "../libs/bootstrap/scss/progress";
+@import "../libs/bootstrap/scss/media";
+@import "../libs/bootstrap/scss/list-group";
+@import "../libs/bootstrap/scss/close";
+@import "../libs/bootstrap/scss/modal";
+@import "../libs/bootstrap/scss/tooltip";
+@import "../libs/bootstrap/scss/popover";
+@import "../libs/bootstrap/scss/carousel";
+@import "../libs/bootstrap/scss/print";
+
+
+// Custom theme styles here
+
+@import 'partials/global';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/sidebar';
+@import 'partials/js_composer';
+@import 'partials/shortcodes';
+@import 'partials/page';
+@import 'partials/post';
+
+

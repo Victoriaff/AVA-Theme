@@ -3,17 +3,17 @@
 if ( ! class_exists( 'AVA_Theme' ) ) {
 	class AVA_Theme {
 		
-		private static $instance;
+		public $config;
+		
+		public $modules;
 		
 		public $options;
-		
-		public $config;
 		
 		public $admin;
 		
 		public $front;
-		
-		public $avafw;
+
+		private static $instance;
 		
 		
 		/**
@@ -146,6 +146,8 @@ if ( ! class_exists( 'AVA_Theme' ) ) {
 				// Redux
 				require_once AVA_THEME_VENDOR_DIR . '/redux-framework/ReduxCore/framework.php';
 			}
+			
+			
 		}
 		
 		/**
@@ -458,6 +460,7 @@ if ( ! class_exists( 'AVA_Theme' ) ) {
 		 */
 		function enqueue_scripts() {
 			
+			/*
 			if ( is_admin() ) {
 			} else {
 				// Theme stylesheet.
@@ -480,6 +483,7 @@ if ( ! class_exists( 'AVA_Theme' ) ) {
 				
 				
 			}
+			*/
 			// Add custom fonts, used in the main stylesheet.
 			//wp_enqueue_style( 'ava-theme-fonts', $this->custom_fonts_url(), array(), null );
 			
@@ -543,12 +547,12 @@ if ( ! class_exists( 'AVA_Theme' ) ) {
 	}
 }
 
-if ( ! function_exists( 'ava_theme' ) ) {
-	function ava_theme() {
+if ( ! function_exists( 'AVA_Theme' ) ) {
+	function AVA_Theme() {
 		return AVA_Theme::instance();
 	}
 }
-ava_theme()->init();
+AVA_Theme()->init();
 
 
 

@@ -12,7 +12,7 @@ $this->sections['general'] = array(
 			'id' => 'image_sizes',
 			'type' => 'multi_text',
 			'title' => __( 'Image Sizes', 'ava-theme' ),
-			'options' => ava_theme()->config['modules'],
+			'options' => AVA_Theme()->config['modules'],
 			'default' => array(				
 			),
 			'class' => 'image_sizes'

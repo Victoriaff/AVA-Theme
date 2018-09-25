@@ -1,0 +1,23 @@
+.redux-notice, .rAds, .rAds span, #redux_rAds,
+.redux-dev-mode-notice-container {
+  display: none;
+}
+
+ul.redux-multi-text li {
+  float: left;
+  display: inline-block;
+}
+ul.redux-multi-text input.regular-text {
+  width: 70px;
+}
+
+.redux-multi-text-remove.deletion {
+  font-size: 11px !important;
+  color: gray !important;
+}
+.redux-multi-text-remove.deletion:hover {
+  background-color: gray !important;
+  color: #FFF !important;
+}
+
+/*# sourceMappingURL=admin.css.map */

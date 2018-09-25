@@ -1,23 +1,18 @@
 .redux-notice, .rAds, .rAds span, #redux_rAds,
 .redux-dev-mode-notice-container {
-  display: none;
-}
+  display: none; }
 
 ul.redux-multi-text li {
   float: left;
-  display: inline-block;
-}
+  display: inline-block; }
 ul.redux-multi-text input.regular-text {
-  width: 70px;
-}
+  width: 70px; }
 
 .redux-multi-text-remove.deletion {
   font-size: 11px !important;
-  color: gray !important;
-}
-.redux-multi-text-remove.deletion:hover {
-  background-color: gray !important;
-  color: #FFF !important;
-}
+  color: gray !important; }
+  .redux-multi-text-remove.deletion:hover {
+    background-color: gray !important;
+    color: #FFF !important; }
 
-/*# sourceMappingURL=file:///C:/OSPanel/domains/wordpress.lc/wp-content/themes/ava-theme/assets/css/admin.css.map */
+/*# sourceMappingURL=admin.css.map */

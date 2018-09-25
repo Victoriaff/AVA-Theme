@@ -10,7 +10,7 @@ $this->sections['modules'] = array(
 			'type' => 'checkbox',
 			'title' => __( 'Active Modules', 'ava-theme' ),
 			"subtitle" => wp_kses( __( "Turn <strong>On</strong> or <strong>Off</strong> individual shortcodes. ", "ava-theme" ), array( 'a' => array( 'href' => array(), 'target' => array() ), 'br' => array(), 'strong' => array() ) ),
-			'options' => ava_theme()->config('modules'),
+			'options' => AVA_Theme()->config('modules'),
 			'default' => array(				
 			)
 		),

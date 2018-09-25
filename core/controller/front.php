@@ -77,7 +77,7 @@ class AVA_Theme_Front extends AVA_Theme_Controller {
 	function load_assets() {
 		
 		// CSS styles
-		wp_enqueue_style( 'ava-theme-bootstrap-grid', AVA_THEME_URL . '/assets/libs/bootstrap/bootstrap-grid'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
+		//wp_enqueue_style( 'ava-theme-bootstrap-grid', AVA_THEME_URL . '/assets/libs/bootstrap/scss/bootstrap-grid'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
 		wp_enqueue_style( 'ava-theme-animate', AVA_THEME_URL . '/assets/css/animate'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
 		wp_enqueue_style( 'ava-theme-style', AVA_THEME_URL . '/assets/css/style'.AVA_THEME_MINIFY.'.css', false, AVA_THEME_CACHE_TIME );
 		
