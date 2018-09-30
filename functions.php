@@ -13,7 +13,18 @@ define( 'AVA_THEME_MINIFY', '' );
 
 //dump('AVA_Theme');
 
-require_once AVA_THEME_DIR . '/add-ava-fields.php';
+//require_once AVA_THEME_DIR . '/add-ava-fields.php';
+
+/*
+require_once AVA_THEME_DIR . '/add-ava-custom-menu.php';
+require_once AVA_THEME_DIR . '/add-ava-custom-submenu.php';
+
+require_once AVA_THEME_DIR . '/add-ava-theme-custom-menu.php';
+require_once AVA_THEME_DIR . '/add-ava-plugins-custom-menu.php';
+require_once AVA_THEME_DIR . '/add-ava-users-custom-menu.php';
+
+require_once AVA_THEME_DIR . '/add-ava-custom-post-type.php';
+*/
 
 require_once AVA_THEME_CORE_DIR . '/ava-theme.php';
 

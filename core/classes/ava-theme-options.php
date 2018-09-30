@@ -15,14 +15,16 @@ if ( !class_exists( 'AVA_Theme_Options' ) ) {
 
 			parent::__construct();
 
+
+
 			// Set the default arguments
-			$this->getArguments();
+			//$this->getArguments();
 
 			// Create the sections and fields
-			$this->setSections( 'theme-options' );
+			//$this->setSections( 'theme-options' );
 
 			// Output options
-			$this->show();
+			//$this->show();
 
 		}
 
